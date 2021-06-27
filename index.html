@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Module 6 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/service.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-blue">
+        <a class="navbar-brand"><strong>Menu ></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rendez-vous">Prendre Rendez-vous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experts">Choisir un spécialiste</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/company_logo.png" width="130" height="130"> Bienvenue chez ONE PHYSIO</h1>
+    </nav>
+
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> A propos :</h1>
+        <p class="p-4 my-3" style="font-size: 25px">Nous sommes une clinique Chricopratique située a Montréal </p>
+        <p style="font-size: 25px; padding-left: 1.5rem">Notre adresse : <strong>302, Place Rue Marie, H3B 2C4</strong></p>
+        <p style="font-size: 25px; padding-left: 1.5rem">Nous vous mettons a disposition les <strong>meilleurs</strong> professionels du domaine</p>
+    </div>
+    <!--
+Tables are one of many ways to organize information easily.
+It is a good way to list of prices, or services in a business website
+https://getbootstrap.com/docs/5.0/content/tables/
+-->
+
+    <table class="table table-info table-hover" id="services">
+        <img src="images/icons8-service-bell-64.jpg" width="50" height="50" alt="" srcset=""> 
+        <thead>
+            <tr>
+                <th scope="col">
+                    <h2>Services</h2>
+                </th>
+                <th scope="col">
+                    <h2>Prix</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Pathologies Lombaires <input type="checkbox"> </td>
+                <td>100 $</td>
+            </tr>
+
+            <tr>
+                <td>Pathologies Cervicales <input type="checkbox"> </td>
+                <td>150 $</td>
+            </tr>
+
+            <tr>
+                <td>Pathologie de l'épaule <input type="checkbox"></td>
+                <td>180 $</td>
+            </tr>
+            <tr>
+                <td>Pathologies Cervicales<input type="checkbox"></td>
+                <td>300 $</td>
+            </tr>
+            <tr>
+                <td>Trouble de la posture <input type="checkbox"></td>
+                <td>400 $</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    
+
+
+
+    <h1>Rencontrez nos experts !</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Anna, 32 ans, Experte en physiothérapie</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Mike, 28 ans, Chiropracteur confirmé </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Louis, 25 ans, Expert en ajustement Chiropratique</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="experts" style="background-color: lightgrey;" >
+        <img src="images/expertIcone.jpeg" alt="expert icone" srcset="" margin-left = "50%" width="300px" height="300px" >
+        <label for="expert"><h3>Choisissez l'expert ici :</h3></label>
+
+        <select name="expert" id="docs">
+          <option value="Anna" id="Anna">Anna</option>
+          <option value="Mike" id="Mike">Mike</option>
+          <option value="Louis" id="Louis">Louis</option>
+        </select>
+    </div>
+
+
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+
+
+    <h2> <img src="images/icons8-calendar.jpeg" width="50" height="50" alt="" srcset=""> Merci de saisir vos informations</h2>
+
+    <form id="rendez-vous" >
+
+        <div class="form-group">
+            <label for="Nom" name="fname" >Nom:</label>
+            <input type="text" id="nom" class="form-control" required>
+        </div>
+
+        <div class="form-group" >
+            <label for="Prenom" >Prenom :</label>
+            <input type="text" id="prenom" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Adresse Mail :</label>
+            <input type="email" class="form-control"  id="email" placeholder="user@gmail.com" title="On vous rappelle pour votre rendez-vous" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Numéro de téléphone :</label>
+            <input value="" type="text" id="phone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date"> Date :</label>
+            <input type="text" class="form-control" id="dateInput" required title="Appointement date" >
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="time">Numéro de carte de crédit : <img src="images/cartedecredit.jpg" alt="payment" width="80" height="80"> <br></label>
+            <input type="text" id="debit" class="form-control"title="We ask for your credit card number in case of no-show, 20$ will be charged." required>
+        </div>
+
+        <br>
+        <p id="confirmation"></p>
+        <button type="submit" class="btn btn-primary" id="inscription" onclick="confirmMessage()">Confirmer</button>
+    </form>
+
+
+
+
+    <!--
+We can also use buttons to expand some hidden options
+https://getbootstrap.com/docs/5.0/components/collapse/
+-->
+
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+https://getbootstrap.com/docs/5.0/components/accordion/
+-->
+
+
+</body>
+
+
+
+</html>
